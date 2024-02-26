@@ -28,8 +28,8 @@ down.addEventListener('click', function(){
 })
 
 up.addEventListener('click', function(){
-  itemsCollection[counter++].classList.remove('hide');
-  itemsCollection[counter].classList.add('hide');
+  itemsCollection[counter++].classList.add('hide');
+  itemsCollection[counter].classList.remove('hide');
 })
 
 
