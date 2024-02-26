@@ -1,0 +1,29 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.main-wrapper{
+  height: 100vh;
+  background-color: aquamarine;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.slider{
+  height: 300px;
+  width: 600px;
+}
+
+.img-wrapper{
+  height: 100%;
+}
+
+.img-wrapper img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+/* img tagliato? */
