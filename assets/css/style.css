@@ -13,8 +13,8 @@
 }
 
 .slider{
-  height: 300px;
-  width: 600px;
+  width: 60%;
+  height: 50%;
   position: relative;
   background-color: lightgoldenrodyellow;
   
@@ -29,7 +29,7 @@
   width: 100%;
   object-fit: cover;
 }
-/* img tagliato? */
+
 
 .btn-chevron{
   height: 20px;

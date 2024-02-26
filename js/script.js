@@ -1,7 +1,8 @@
 const imgWrapper = document.querySelector('.img-wrapper');
 let counter = 0
 
-
+const up = document.querySelector('.up');
+const down =document.querySelector('.down');
 
 const images = [
   'assets/img/01.webp',
@@ -13,27 +14,25 @@ const images = [
 
 for(let i = 0; i < images.length; i++){
   const img = images[i];
-  console.log(img)
   imgWrapper.innerHTML += `<img class="img hide" src="${img}">`;
 }
 
 const itemsCollection = document.getElementsByClassName('img');
-console.log('img');
 
-itemsCollection[counter].classList.remove('hide')
+itemsCollection[counter].classList.remove('hide');
 
-const up = document.querySelector('.up');
-const down =document.querySelector('.down');
 
-down.addEventListener('click',function(){
-  counter--;
-  console.log(counter)
+down.addEventListener('click', function(){
+  itemsCollection[counter--].classList.add('hide');
+  itemsCollection[counter].classList.remove('hide');
 })
 
-up.addEventListener('click',function(){
-  counter++;
-  console.log(counter)
+up.addEventListener('click', function(){
+  itemsCollection[counter++].classList.remove('hide');
+  itemsCollection[counter].classList.add('hide');
 })
+
+
 
 
 
