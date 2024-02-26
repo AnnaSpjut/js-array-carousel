@@ -15,7 +15,9 @@
 .slider{
   height: 300px;
   width: 600px;
-  position: relative
+  position: relative;
+  background-color: lightgoldenrodyellow;
+  
 }
 
 .img-wrapper{
@@ -55,3 +57,6 @@
   bottom: 10px;
 }
 
+.hide{
+  display: none;
+}
